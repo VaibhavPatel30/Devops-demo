@@ -1,0 +1,35 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Build images using docker-compose
+        run: docker compose build
+
+      - name: Push images to Docker Hub
+        run: docker compose push
+
+      # - name: Build and Push Frontend Image
+      #   run: |
+      #     docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest ./frontend
+      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest
+
+      # - name: Build and Push Backend Image
+      #   run: |
+      #     docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/backend:latest ./backend
+      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/backend:latest
