@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CnTOD2hF+ODl2apCzN+qLI5UtwNxiw1R8LvuyShb4YM=",
+  "Source": "docker-backend",
+  "BasePath": "_content/docker-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

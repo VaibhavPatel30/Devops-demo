@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: docker-demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build: ./docker-backend
+    container_name: docker-be
+    ports:
+      - "47430:1414"
+    environment:
+      ASPNETCORE_URLS: "http://+:1414"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Host=host.docker.internal;Port=5432;Database=docker-demo;Username=postgres;Password=postgres"
+      # TestingString: "Heyyy!! this is from appsettings.json file."
+    depends_on:
+      - db
+
+  frontend:
+    build: ./docker-frontend
+    container_name: docker-fe
+    ports:
+      - "3030:3030"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

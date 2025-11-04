@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "+wpvogMMX79cae+1/nuxQeRmKl1BLigf9bHI4VkNmN0=",
+  "Source": "docker-backend",
+  "BasePath": "_content/docker-backend",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

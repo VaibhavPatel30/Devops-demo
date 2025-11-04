@@ -1,0 +1,14 @@
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\docker-backend.exe
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\docker-backend.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\docker-backend.deps.json
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\docker-backend.runtimeconfig.json
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\docker-backend.pdb
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Npgsql.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\OneDrive - Promact Infotech Pvt Ltd\Desktop\Learning\Docker Demo\docker-backend\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
