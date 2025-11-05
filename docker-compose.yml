@@ -18,9 +18,9 @@ services:
     image: vaibhavpatelpromact/backend:latest
     container_name: docker-be
     ports:
-      - "47430:1414"
+      - "47430:47430"
     environment:
-      ASPNETCORE_URLS: "http://+:1414"
+      ASPNETCORE_URLS: "http://+:47430"
       ASPNETCORE_ENVIRONMENT: "Development"
       ConnectionStrings__DefaultConnection: "Host=host.docker.internal;Port=5432;Database=docker-demo;Username=postgres;Password=postgres"
       # TestingString: "Heyyy!! this is from appsettings.json file."
@@ -32,7 +32,7 @@ services:
     image: vaibhavpatelpromact/frontend:latest
     container_name: docker-fe
     ports:
-      - "3030:3030"
+      - "3000:3000"
     depends_on:
       - backend
 

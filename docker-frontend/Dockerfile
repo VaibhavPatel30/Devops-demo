@@ -27,7 +27,7 @@ RUN npm install --only=production -g serve
 # Step 5: Copy build files from build stage to runtime stage
 COPY --from=build /app/dist ./dist
 # Step 6: Run container on the given port
-EXPOSE 3030
+EXPOSE 3000
 # Step 7: Run commane to run the application on mentioned port
 # CMD ["npm", "run", "preview", "--", "--host", "--port", "3030"]
-CMD ["serve", "-s", "dist", "-l", "3030"]
+CMD ["serve", "-s", "dist", "-l", "3000"]

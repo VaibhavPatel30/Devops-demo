@@ -12,8 +12,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("https://devops-demo-pearl.vercel.app") // Frontend URL
-              .AllowAnyHeader()
+        //policy.WithOrigins("https://devops-demo-pearl.vercel.app") // Frontend URL
+        policy.WithOrigins("*") // Frontend URL
+             .AllowAnyHeader()
               .AllowAnyMethod();
     });
 });
