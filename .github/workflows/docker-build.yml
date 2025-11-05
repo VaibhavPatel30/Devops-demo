@@ -18,6 +18,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
+      - name: Create .env file for build
+        run: echo "${{ secrets.ENV_FILE }}" > ./docker-frontend/.env
+      
       - name: Build images using docker-compose
         run: docker compose build
 
