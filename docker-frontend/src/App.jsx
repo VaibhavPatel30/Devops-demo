@@ -71,10 +71,22 @@ function App() {
       {productidData &&
         (
           <>
-            <br />
-            <span>{productidData.id}</span><br />
-            <span>{productidData.price}</span><br />
-            <span>{productidData.name}</span><br />
+            <table border="1" cellPadding="10">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Price (₹)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr key={productidData.id}>
+                  <td>{productidData.id}</td>
+                  <td>{productidData.name}</td>
+                  <td>{productidData.price}</td>
+                </tr>
+              </tbody>
+            </table>
           </>
         )
       }
