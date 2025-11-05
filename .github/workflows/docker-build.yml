@@ -27,6 +27,18 @@ jobs:
       - name: Push images to Docker Hub
         run: docker compose push
 
+      # - name: Trigger Render Deployment
+      #   run: |
+      #     curl -X POST \
+      #       -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+      #       -H "Content-Type: application/json" \
+      #       -d '{"clearCache":true}' \
+      #       https://api.render.com/v1/services/<service-id>/deploys
+
+      # - name: Trigger Vercel Deployment
+      #   run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --confirm
+
+
       # - name: Build and Push Frontend Image
       #   run: |
       #     docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest ./frontend
