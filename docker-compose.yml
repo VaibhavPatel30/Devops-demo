@@ -15,7 +15,6 @@ services:
 
   backend:
     build: ./docker-backend
-    image: ${{ secrets.DOCKERHUB_USERNAME }}/backend:latest
     container_name: docker-be
     ports:
       - "47430:1414"
@@ -29,7 +28,6 @@ services:
 
   frontend:
     build: ./docker-frontend
-    image: ${{ secrets.DOCKERHUB_USERNAME }}/frontend:latest
     container_name: docker-fe
     ports:
       - "3030:3030"
