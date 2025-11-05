@@ -10,8 +10,12 @@ builder.Services.AddSingleton<ProductService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
-        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("https://https://devops-demo-pearl.vercel.app") // Frontend URL
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
 });
 
 
@@ -29,7 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
 app.MapControllers();
 
 app.Run();
