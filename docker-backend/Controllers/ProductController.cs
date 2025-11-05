@@ -20,7 +20,7 @@ namespace docker_backend.Controllers
         public IActionResult GetAll()
         {
             var products = _productservice.GetAllProducts();
-            return Ok(products);
+            return Ok(new { products = products, message = "HELLO GITHUB ACTIONS" });
         }
 
         [HttpGet]

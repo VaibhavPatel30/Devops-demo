@@ -18,7 +18,8 @@ function App() {
         return res.json();
       })
       .then((result) => {
-        setData(result);
+        setData(result.products);
+        alert(result.message)
       })
       .catch((err) => {
         setError(err.message);
