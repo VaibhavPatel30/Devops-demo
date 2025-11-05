@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("https://https://devops-demo-pearl.vercel.app") // Frontend URL
+        policy.WithOrigins("https://devops-demo-pearl.vercel.app") // Frontend URL
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
