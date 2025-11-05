@@ -35,9 +35,6 @@ jobs:
       #       -d '{"clearCache":true}' \
       #       https://api.render.com/v1/services/<service-id>/deploys
 
-      # - name: Trigger Vercel Deployment
-      #   run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --confirm
-
 
       # - name: Build and Push Frontend Image
       #   run: |
